@@ -9,10 +9,10 @@ It comprised of most of all the concepts used in selenium.
 Unfinished parts - 
 	1. While automating a Test Case 2, encounter a test step which cannot be 				Automated.  Automation the earlier Test Step is done and the rest of the part where 		test script had to pass a reCAPTCHA is remaining as it cannot pass through without 	human intervention as far as tried.
 	A possible workaround for it would be we bypass this step when system is under 			test.
-	2.Last Test Case’s (Test Case2) for API last point, where content type is JSON and 		Verify in Response - "Place Name" for each input "Country" and "Postal 				Code”.Was to be done. The response code is html and unable to parse the 			data.Possibly more study will lead to a solution which could be existing.
+	2.Last Test Case’s (Test Case2) for API last point, where content type is html and 		Verify in Response - "Place Name" for each input "Country" and "Postal 				Code”.Was to be done. The response code is html and unable to parse the 			data.Possibly more study will lead to a solution which could be existing.
 Few common points like 
-Working on few points like creating a testNG.xml
-Working on adding a man file so execution can be done via command prompt
+
+Working on adding a mvn file so execution can be done via command prompt
 Creating Jeinkins job
 
 Getting Started
