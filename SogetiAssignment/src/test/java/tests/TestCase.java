@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,9 +17,9 @@ public class TestCase extends BaseClass{
 		//passing the parameter as driver which was initialized in base class
 		home.hoverServicesAndClickAutomationLink();
 		AutomationPage automation = new AutomationPage(driver);
-		Assert.assertEquals(automation.getAutomationText(), "AUTOMATION");
+		AssertJUnit.assertEquals(automation.getAutomationText(), "AUTOMATION");
 		System.out.println("Verified Automation Page is loaded");
-		Assert.assertTrue(automation.verifyServicesAndAutomationLink());
+		AssertJUnit.assertTrue(automation.verifyServicesAndAutomationLink());
 		System.out.println("Verified both Services and Automation are selected");
 				
 	}

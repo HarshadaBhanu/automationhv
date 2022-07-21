@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.hamcrest.Matchers;
@@ -29,11 +31,11 @@ public class GetAPI {
 				// making actual request to server
 				Response response=request.get("de/bw/stuttgart"); //query or path parameter, returning in the form of response
 				System.out.println("The response status code for http://api.zippopotam.us/de/bw/stuttgart is  "+ response.getStatusCode());
-				Assert.assertEquals(response.getStatusCode(), 200, "The response code for http://api.zippopotam.us/de/bw/stuttgart is not 200");
+				AssertJUnit.assertEquals(response.getStatusCode(), 200);
 				System.out.println("Verified StatusCode is 200");
 				
 				System.out.println("The content type for http://api.zippopotam.us/de/bw/stuttgart is "+response.getContentType());
-				Assert.assertEquals(response.getContentType(), "application/json", "The content type code for http://api.zippopotam.us/de/bw/stuttgart is not json");
+				AssertJUnit.assertEquals(response.getContentType(), "application/json");
 				System.out.println("Verified ContentType is json");
 				
 				System.out.println("The response time in milisecon is" +response.getTime());
@@ -51,9 +53,9 @@ public class GetAPI {
 				JsonPath js = new JsonPath(str);
 				System.out.println("Places" +js.get("places"));
 				System.out.println("Country" +js.get("country"));
-				Assert.assertEquals(js.get("country"), "Germany", "Country is not Germany");
+				AssertJUnit.assertEquals(js.get("country"), "Germany");
 				System.out.println("Verified country is Germany");
-				Assert.assertEquals(js.get("state"), "Baden-Württemberg", "State is not Baden-Württemberg");
+				AssertJUnit.assertEquals(js.get("state"), "Baden-Württemberg");
 				System.out.println("Verified state is Baden-Württemberg");
 				
 				
@@ -100,11 +102,11 @@ public class GetAPI {
 					
 			    //res.body().prettyPrint();
 			    System.out.println("The status code is" +res.getStatusCode());
-				Assert.assertEquals(res.getStatusCode(), 200, "The status code is not 200");
+				AssertJUnit.assertEquals(res.getStatusCode(), 200);
 				
 				System.out.println(res.getContentType());
 				try {
-					Assert.assertEquals(res.getContentType(), "application/json", "The content type is not json");
+					AssertJUnit.assertEquals(res.getContentType(), "application/json", "The content type is not json");
 				}catch (AssertionError e) {
 			         System.out.println(e.getMessage());
 			      }

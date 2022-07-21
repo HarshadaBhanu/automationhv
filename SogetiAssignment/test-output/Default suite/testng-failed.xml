@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TestCase">
+      <class name="tests.GetAPI">
         <methods>
-          <include name="setupApplication"/>
-          <include name="verifyContactUs"/>
-          <include name="verifyWorldwideDropdownCounties"/>
-          <include name="closeApplication"/>
-          <include name="verifyServicesAutomationLink"/>
+          <include name="APITest1"/>
         </methods>
-      </class> <!-- tests.TestCase -->
+      </class> <!-- tests.GetAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
