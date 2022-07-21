@@ -16,7 +16,9 @@ public class TestCase extends BaseClass{
 		home.hoverServicesAndClickAutomationLink();
 		AutomationPage automation = new AutomationPage(driver);
 		Assert.assertEquals(automation.getAutomationText(), "AUTOMATION");
+		System.out.println("Verified Automation Page is loaded");
 		Assert.assertTrue(automation.verifyServicesAndAutomationLink());
+		System.out.println("Verified both Services and Automation are selected");
 				
 	}
 	

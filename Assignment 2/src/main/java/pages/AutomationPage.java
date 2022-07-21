@@ -97,16 +97,16 @@ Actions action;
 		
 		//Random rand = new Random();
 		
-		this.firstName.sendKeys(RandomStringUtils.randomAlphabetic(6));
-		this.lastName.sendKeys(RandomStringUtils.randomAlphabetic(6));
-		this.email.sendKeys(RandomStringUtils.randomAlphabetic(6)+"@"+RandomStringUtils.randomAlphabetic(4)+".com");
-		this.phone.sendKeys(RandomStringUtils.random(10, "1234567890".toCharArray()));
-		this.company.sendKeys(RandomStringUtils.randomAlphabetic(6));
+		firstName.sendKeys(RandomStringUtils.randomAlphabetic(6));
+		lastName.sendKeys(RandomStringUtils.randomAlphabetic(6));
+		email.sendKeys(RandomStringUtils.randomAlphabetic(6)+"@"+RandomStringUtils.randomAlphabetic(4)+".com");
+		phone.sendKeys(RandomStringUtils.random(10, "1234567890".toCharArray()));
+		company.sendKeys(RandomStringUtils.randomAlphabetic(6));
 		Select cntry = new Select(country);
 		cntry.selectByVisibleText("India");
-		this.message.sendKeys(RandomStringUtils.randomAlphabetic(20));
-		this.agree.click();
-		
+		message.sendKeys(RandomStringUtils.randomAlphabetic(20));
+		agree.click();
+		System.out.println("Added details to ContactUs form");
 		
 		WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.xpath("//iframe[@title='reCAPTCHA']")));
@@ -118,6 +118,7 @@ Actions action;
 		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.recaptcha-checkbox-checkmark"))).click();
 		//this.captcha.click();
 		this.submit.click();
+		System.out.println("Unable to pass through reCAPTCHA, alternative could be we do not show this when under test");
 		
 		//Thread.sleep(10000);
 	}

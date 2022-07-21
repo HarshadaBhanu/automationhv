@@ -48,6 +48,7 @@ public class HomePage {
 		action.moveToElement(servicesLink);
 		action.moveToElement(automationLink);
 		action.click().build().perform();
+		System.out.println("Hover Services Link and clicked Automation Link");
 		//action.build().perform();
 	}
 	
@@ -111,6 +112,7 @@ public class HomePage {
 		//switch to the parent window
 		driver.switchTo().window(originalWindow);
 		
-		Assert.assertTrue(expectedTitleList.size() == actualTitleList.size() && expectedTitleList.containsAll(actualTitleList) && actualTitleList.containsAll(expectedTitleList));
+		Assert.assertTrue(expectedTitleList.size() == actualTitleList.size() && expectedTitleList.containsAll(actualTitleList) && actualTitleList.containsAll(expectedTitleList), "Country link not working");
+		System.out.println("All the countries in the list under worldwide are working");
 	}
 }

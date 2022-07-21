@@ -29,6 +29,7 @@ public class BaseClass {
 		driver.get("https://www.sogeti.com/"); //url to test - opens browser and url is hit
         driver.findElement(By.xpath("//button[contains(text(),\"Allow all cookies\")]")).click();
         driver.manage().window().maximize(); //open window and maximize
+        System.out.println("URL for Sogeti launched");
 
 	}
 	
