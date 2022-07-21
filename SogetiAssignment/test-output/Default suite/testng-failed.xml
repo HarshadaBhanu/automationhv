@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.GetAPI">
+      <class name="tests.UITestCases">
         <methods>
-          <include name="APITest1"/>
+          <include name="setupApplication"/>
+          <include name="closeApplication"/>
+          <include name="verifyServicesAutomationLink"/>
+          <include name="verifyContactUs"/>
+          <include name="verifyWorldwideDropdownCounties"/>
         </methods>
-      </class> <!-- tests.GetAPI -->
+      </class> <!-- tests.UITestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
