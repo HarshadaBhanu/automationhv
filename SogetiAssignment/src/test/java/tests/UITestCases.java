@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pages.AutomationPage;
 import pages.HomePage;
 
-public class TestCase extends BaseClass{
+public class UITestCases extends BaseClass{
 	
 	@Test(priority=1)
 	public void verifyServicesAutomationLink() {
@@ -17,9 +17,9 @@ public class TestCase extends BaseClass{
 		//passing the parameter as driver which was initialized in base class
 		home.hoverServicesAndClickAutomationLink();
 		AutomationPage automation = new AutomationPage(driver);
-		AssertJUnit.assertEquals(automation.getAutomationText(), "AUTOMATION");
+		Assert.assertEquals(automation.getAutomationText(), "AUTOMATION", "The Automation page is not loaded");
 		System.out.println("Verified Automation Page is loaded");
-		AssertJUnit.assertTrue(automation.verifyServicesAndAutomationLink());
+		Assert.assertTrue(automation.verifyServicesAndAutomationLink(), "Services and Automation both are not selected");
 		System.out.println("Verified both Services and Automation are selected");
 				
 	}

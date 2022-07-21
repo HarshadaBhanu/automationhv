@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.GetAPI"/>
-      <class name="tests.TestCase"/>
+      <class name="tests.APITestCases"/>
+      <class name="tests.UITestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

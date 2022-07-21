@@ -2,87 +2,18 @@
 <testng-results ignored="0" total="7" passed="4" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T11:18:07 CEST" name="Suite" finished-at="2022-07-21T11:18:11 CEST" duration-ms="4711">
+  <suite started-at="2022-07-21T17:55:10 CEST" name="Suite" finished-at="2022-07-21T17:55:16 CEST" duration-ms="5849">
     <groups>
     </groups>
-    <test started-at="2022-07-21T11:18:07 CEST" name="Test" finished-at="2022-07-21T11:18:11 CEST" duration-ms="4711">
-      <class name="tests.GetAPI">
-        <test-method signature="APITest1()[pri:0, instance:tests.GetAPI@3232a28a]" started-at="2022-07-21T11:18:07 CEST" name="APITest1" finished-at="2022-07-21T11:18:10 CEST" duration-ms="3536" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APITest1 -->
-        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.GetAPI@3232a28a]" started-at="2022-07-21T11:18:10 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T11:18:11 CEST" duration-ms="403" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[us]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[90210 ]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Beverly Hills]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APITest2 -->
-        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.GetAPI@3232a28a]" started-at="2022-07-21T11:18:11 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T11:18:11 CEST" duration-ms="270" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[us]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345 ]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Schenectady]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APITest2 -->
-        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.GetAPI@3232a28a]" started-at="2022-07-21T11:18:11 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T11:18:11 CEST" duration-ms="256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ca]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[B2R ]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Waverley]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APITest2 -->
-      </class> <!-- tests.GetAPI -->
-      <class name="tests.TestCase">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="setupApplication" finished-at="2022-07-21T11:18:11 CEST" duration-ms="74" status="FAIL">
+    <test started-at="2022-07-21T17:55:10 CEST" name="Test" finished-at="2022-07-21T17:55:16 CEST" duration-ms="5849">
+      <class name="tests.UITestCases">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="setupApplication" finished-at="2022-07-21T17:55:16 CEST" duration-ms="37" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver]]>
+              <![CDATA[It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver
+              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver
 at org.openqa.selenium.internal.Require.stateCondition(Require.java:169)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:148)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
@@ -128,13 +59,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="verifyServicesAutomationLink()[pri:1, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="verifyServicesAutomationLink" finished-at="2022-07-21T11:18:11 CEST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyServicesAutomationLink()[pri:1, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="verifyServicesAutomationLink" finished-at="2022-07-21T17:55:16 CEST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver]]>
+              <![CDATA[It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver
+              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver
 at org.openqa.selenium.internal.Require.stateCondition(Require.java:169)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:148)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
@@ -180,21 +111,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyServicesAutomationLink -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658395091854" status="SKIP">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658418916069" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="setupApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658395091868" status="SKIP">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="setupApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658418916075" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="verifyContactUs()[pri:2, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="verifyContactUs" finished-at="2022-07-21T11:18:11 CEST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyContactUs()[pri:2, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="verifyContactUs" finished-at="2022-07-21T17:55:16 CEST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver]]>
+              <![CDATA[It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver
+              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver
 at org.openqa.selenium.internal.Require.stateCondition(Require.java:169)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:148)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
@@ -240,21 +171,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactUs -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658395091877" status="SKIP">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658418916082" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="setupApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658395091880" status="SKIP">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="setupApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658418916084" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="verifyWorldwideDropdownCounties()[pri:3, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="verifyWorldwideDropdownCounties" finished-at="2022-07-21T11:18:11 CEST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyWorldwideDropdownCounties()[pri:3, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="verifyWorldwideDropdownCounties" finished-at="2022-07-21T17:55:16 CEST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver]]>
+              <![CDATA[It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/eclipse-workspace/SogetiAssignment/chromedriver
+              <![CDATA[java.lang.IllegalStateException: It must be an executable file: /Users/harshadabhanu/Documents/GitHub/automationhv/SogetiAssignment/chromedriver
 at org.openqa.selenium.internal.Require.stateCondition(Require.java:169)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:148)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
@@ -300,11 +231,80 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWorldwideDropdownCounties -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.TestCase@5acf93bb]" started-at="2022-07-21T11:18:11 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658395091892" status="SKIP">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.UITestCases@5acf93bb]" started-at="2022-07-21T17:55:16 CEST" name="closeApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1658418916092" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- tests.TestCase -->
+      </class> <!-- tests.UITestCases -->
+      <class name="tests.APITestCases">
+        <test-method signature="APITest1()[pri:1, instance:tests.APITestCases@3232a28a]" started-at="2022-07-21T17:55:10 CEST" name="APITest1" finished-at="2022-07-21T17:55:15 CEST" duration-ms="4746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APITest1 -->
+        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.APITestCases@3232a28a]" started-at="2022-07-21T17:55:15 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T17:55:15 CEST" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[90210 ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Beverly Hills]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APITest2 -->
+        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.APITestCases@3232a28a]" started-at="2022-07-21T17:55:15 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T17:55:15 CEST" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345 ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Schenectady]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APITest2 -->
+        <test-method signature="APITest2(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.APITestCases@3232a28a]" started-at="2022-07-21T17:55:15 CEST" name="APITest2" data-provider="dataprovider1" finished-at="2022-07-21T17:55:15 CEST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ca]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B2R ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Waverley]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APITest2 -->
+      </class> <!-- tests.APITestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

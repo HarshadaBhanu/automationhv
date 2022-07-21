@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.TestCase">
+      <class name="tests.UITestCases">
         <methods>
           <include name="setupApplication"/>
-          <include name="verifyContactUs"/>
-          <include name="verifyWorldwideDropdownCounties"/>
           <include name="closeApplication"/>
           <include name="verifyServicesAutomationLink"/>
+          <include name="verifyContactUs"/>
+          <include name="verifyWorldwideDropdownCounties"/>
         </methods>
-      </class> <!-- tests.TestCase -->
+      </class> <!-- tests.UITestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

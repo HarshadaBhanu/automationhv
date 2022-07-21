@@ -18,9 +18,9 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 
-public class GetAPI {
+public class APITestCases {
 
-	@Test(enabled=true)
+	@Test(priority=1)
 
 	public void APITest1() {	
 		
@@ -31,15 +31,15 @@ public class GetAPI {
 				// making actual request to server
 				Response response=request.get("de/bw/stuttgart"); //query or path parameter, returning in the form of response
 				System.out.println("The response status code for http://api.zippopotam.us/de/bw/stuttgart is  "+ response.getStatusCode());
-				AssertJUnit.assertEquals(response.getStatusCode(), 200);
+				Assert.assertEquals(response.getStatusCode(), 200, "The status cide is not 200");
 				System.out.println("Verified StatusCode is 200");
 				
 				System.out.println("The content type for http://api.zippopotam.us/de/bw/stuttgart is "+response.getContentType());
-				AssertJUnit.assertEquals(response.getContentType(), "application/json");
+				Assert.assertEquals(response.getContentType(), "application/json", "The content type is not json");
 				System.out.println("Verified ContentType is json");
 				
-				System.out.println("The response time in milisecon is" +response.getTime());
-				System.out.println("The response time in sec is" +response.getTimeIn(TimeUnit.SECONDS));
+				System.out.println("The response time in milisecon is " +response.getTime());
+				System.out.println("The response time in sec is " +response.getTimeIn(TimeUnit.SECONDS));
 				
 				ValidatableResponse valRes = response.then();
 				try {
@@ -53,9 +53,10 @@ public class GetAPI {
 				JsonPath js = new JsonPath(str);
 				System.out.println("Places" +js.get("places"));
 				System.out.println("Country" +js.get("country"));
-				AssertJUnit.assertEquals(js.get("country"), "Germany");
+				Assert.assertEquals(js.get("country"), "Germany", "The country is not Germany");
 				System.out.println("Verified country is Germany");
-				AssertJUnit.assertEquals(js.get("state"), "Baden-Württemberg");
+				Assert.assertEquals(js.get("state"), "Baden-Württemberg", "The state is not Baden-Württemberg");
+				
 				System.out.println("Verified state is Baden-Württemberg");
 				
 				
@@ -65,9 +66,9 @@ public class GetAPI {
 			    for (int i = 0; i < n; ++i) {
 			    	
 			      JSONObject place = places.getJSONObject(i);
-			      if(place.getString("post code").equals("70597")) {
+			      if(place.getString("post code").equals("70597") && place.getString("place name").equals("Stuttgart Degerloch")) {
 			    	  
-				      if( place.getString("place name").equals("Stuttgart Degerloch") )
+				      //if( place.getString("place name").equals("Stuttgart Degerloch") )
 				    	  System.out.println("postal code "+place.getString("post code")+" when matches with place name: "+place.getString("place name"));
 				      //else
 				    	  //System.out.println("postal code "+place.getString("post code")+" does NOT matches with place name: Stuttgart Degerloch");
@@ -86,7 +87,7 @@ public class GetAPI {
 			}
 			
 			/*POST Request Example*/
-			@Test(enabled=true, dataProvider ="dataprovider1")
+			@Test(priority=2, dataProvider ="dataprovider1")
 			public void APITest2(String country , String postalCode, String placeName )
 			{
 				RestAssured.baseURI="http://api.zippopotam.us/";
@@ -102,11 +103,11 @@ public class GetAPI {
 					
 			    //res.body().prettyPrint();
 			    System.out.println("The status code is" +res.getStatusCode());
-				AssertJUnit.assertEquals(res.getStatusCode(), 200);
+				Assert.assertEquals(res.getStatusCode(), 200, "The response code is not 200");
 				
 				System.out.println(res.getContentType());
 				try {
-					AssertJUnit.assertEquals(res.getContentType(), "application/json", "The content type is not json");
+					Assert.assertEquals(res.getContentType(), "application/json", "The content type is not json");
 				}catch (AssertionError e) {
 			         System.out.println(e.getMessage());
 			      }
